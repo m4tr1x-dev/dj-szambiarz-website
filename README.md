@@ -1,41 +1,77 @@
-# DJ Szambiarz — strona internetowa
+# DJ Szambiarz — oficjalna strona internetowa
 
-Statyczna strona wizytówka (HTML + CSS + JS, bez build-stepu). Wystarczy otworzyć
-`index.html` w przeglądarce albo wrzucić cały folder na dowolny hosting
-(Netlify, Vercel, GitHub Pages, zwykły FTP).
+Oficjalne repozytorium kodu strony internetowej **DJ Szambiarz** (Artur Tomaszewski) — profesjonalna oprawa muzyczna na wesela, urodziny, imprezy firmowe i eventy w całej Polsce.
+
+> **Status:** projekt ukończony — strona opublikowana na żywo. ✅
+>
+> 🌐 **[m4tr1x-dev.github.io/dj-szambiarz-website](https://m4tr1x-dev.github.io/dj-szambiarz-website/)**
+
+## O projekcie
+
+DJ Szambiarz to oprawa muzyczna eventów z pełnym bakiem hitów i zerową nudą — disco polo, dance, pop, house i hip-hop, profesjonalne nagłośnienie, oświetlenie oraz konferansjerka.
+
+- **DJ:** Artur Tomaszewski
+- **Telefon:** [507 046 509](tel:+48507046509)
+- **E-mail:** [djszambiarz@gmail.com](mailto:djszambiarz@gmail.com)
+- **Obszar działania:** cała Polska
+
+Strona jest lekka, szybka i responsywna (mobile-first), zbudowana jako pojedyncza strona statyczna i hostowana na **GitHub Pages**.
+
+## Stack
+
+- **Frontend:** HTML5 + CSS + JavaScript (vanilla) + Google Fonts — bez frameworków i bez kroku budowania
+- **Hosting:** GitHub Pages (treść statyczna)
+
+## Zawartość strony
+
+- **Hero** — „Rozkręcę Twoją imprezę"
+- **O mnie** — prezentacja DJ-a
+- **Oferta** („Na czym gram") — zakres usług
+- **Repertuar** („Co leci z głośników") — gatunki i styl grania
+- **Opinie** („Co mówią goście") — referencje gości
+- **Kontakt** („Sprawdź wolny termin") — formularz rezerwacji
+
+Dodatkowo: responsywne menu mobilne, płynne przewijanie, animowane liczniki, galeria oraz przycisk „do góry".
 
 ## Struktura
+
 ```
-index.html      – treść strony
-styles.css      – wygląd, kolory marki, RWD
-script.js       – menu, liczniki, galeria, odtwarzacz demo, formularz
-assets/
-  logo.svg      – zastępcze logo (podmień na oryginał, patrz niżej)
-  favicon.svg   – ikona w karcie przeglądarki
+dj-szambiarz-website/
+├── index.html        # cała strona (jedna podstrona)
+├── styles.css        # wygląd, kolory marki, RWD
+├── script.js         # menu, liczniki, galeria, formularz rezerwacji
+├── assets/
+│   ├── logo.png          # logo (nawigacja, OG, dane strukturalne)
+│   ├── logo-square.png   # logo kwadratowe (sekcja „O mnie")
+│   ├── logo.svg          # logo wektorowe (zapas)
+│   └── favicon.svg       # ikona karty przeglądarki
+├── .gitignore
+└── README.md
 ```
 
-## Co podmienić na swoje
-1. **Logo** — wrzuć oryginalny plik jako `assets/logo.png`. W `index.html`
-   zamień `assets/logo.svg` na `assets/logo.png` (2 miejsca: nawigacja i stopka).
-2. **Zdjęcie DJ-a** — dodaj `assets/dj.jpg` i podmień placeholder w sekcji „O mnie”.
-3. **Galeria** — w `script.js` (tablica `tiles`) podmień emoji-kafelki na
-   prawdziwe `<img>` ze zdjęciami z imprez.
-4. **Kontakt** — w `index.html` ustaw prawdziwy telefon, e-mail i linki do
-   social mediów (Facebook, Instagram, YouTube, TikTok).
-5. **Statystyki / opinie / repertuar** — dostosuj liczby i teksty do siebie.
-6. **Odtwarzacz** — pasek w sekcji „Repertuar” jest demonstracyjny. Możesz
-   wstawić tam embed z SoundCloud / Spotify albo prawdziwy `<audio>`.
+## Uruchomienie lokalne
+
+```bash
+python3 -m http.server 8000
+# następnie otwórz http://localhost:8000
+```
+
+## Wdrożenie (GitHub Pages)
+
+Strona jest opublikowana pod adresem:
+
+```
+https://m4tr1x-dev.github.io/dj-szambiarz-website/
+```
+
+Źródło: gałąź `main`, katalog `/ (root)`. Każdy push na `main` automatycznie publikuje aktualną wersję.
 
 ## Formularz rezerwacji
-Działa **bez backendu** w oparciu o `mailto:`. Po wypełnieniu i walidacji
-formularz otwiera domyślny program pocztowy gościa (Gmail, Outlook, Poczta itp.)
-z gotową wiadomością zaadresowaną na `djszambiarz@gmail.com` — wystarczy
-kliknąć „Wyślij". Adres docelowy zmienisz w `script.js` (stała `RECIPIENT`).
 
-Gdybyś w przyszłości chciał wysyłkę „w tle" (bez otwierania poczty), podłącz
-usługę typu **Formspree** / **Web3Forms** i dodaj `fetch()` w miejscu wysyłki.
+Formularz kontaktowy działa **bez backendu** w oparciu o `mailto:` — po wypełnieniu i walidacji otwiera domyślny program pocztowy gościa z gotową wiadomością zaadresowaną na `djszambiarz@gmail.com`. Adres docelowy ustawia się w `script.js` (stała `RECIPIENT`).
 
 ## Kolory marki
+
 - granat tła `#143a4a`
 - żółty (beczka) `#f5c518`
 - pomarańczowy (napis) `#e8731c`
@@ -47,7 +83,7 @@ Strona zaprojektowana i wykonana przez **CBprojekt sp. z o.o.** — developer **
 
 ## Prawa autorskie
 
-© DJ Szambiarz · Artur Tomaszewski. Wszelkie prawa zastrzeżone.
+© DJ Szambiarz · Artur Tomaszewski. Wszelkie prawa zastrzeżone. Kod oraz materiały służą wyłącznie potrzebom DJ Szambiarz.
 
 ---
 
