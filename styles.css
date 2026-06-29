@@ -259,6 +259,8 @@ ul { list-style: none; padding: 0; }
 .footer__inner { display: flex; flex-direction: column; align-items: center; gap: .7rem; }
 .footer__tag { color: #9fb4bd; }
 .footer__copy { color: #6d8893; font-size: .85rem; }
+.footer__credit { color: #6d8893; font-size: .78rem; line-height: 1.5; margin: 0; }
+.footer__credit strong { color: #9fb4bd; font-weight: 600; }
 
 /* TO TOP */
 .to-top {
