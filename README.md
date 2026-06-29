@@ -40,3 +40,15 @@ usługę typu **Formspree** / **Web3Forms** i dodaj `fetch()` w miejscu wysyłki
 - żółty (beczka) `#f5c518`
 - pomarańczowy (napis) `#e8731c`
 - krem `#fff7e6`
+
+## Wykonanie
+
+Strona zaprojektowana i wykonana przez **CBprojekt sp. z o.o.** — developer **M4tr1x** (Mateusz Gumuła).
+
+## Prawa autorskie
+
+© DJ Szambiarz · Artur Tomaszewski. Wszelkie prawa zastrzeżone.
+
+---
+
+Repozytorium prowadzone przez [@m4tr1x-dev](https://github.com/m4tr1x-dev).
