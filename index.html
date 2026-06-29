@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Szambiarz — Rozkręcimy Twoją imprezę do dna!</title>
+  <meta name="description" content="DJ Szambiarz (Artur Tomaszewski) — oprawa muzyczna na wesela, urodziny, imprezy firmowe i eventy. Pełen bak hitów, zero nudy. Zarezerwuj termin!" />
+  <meta name="author" content="Artur Tomaszewski (DJ Szambiarz)" />
+  <meta name="theme-color" content="#143a4a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DJ Szambiarz — Rozkręcimy Twoją imprezę do dna!" />
+  <meta property="og:description" content="Oprawa muzyczna na wesela, urodziny i eventy. Pełen bak hitów, zero nudy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="DJ Szambiarz — strona główna">
+        <img src="assets/logo.png" alt="Logo DJ Szambiarz" class="brand__logo" width="56" height="56" />
+        <span class="brand__name">DJ <strong>Szambiarz</strong></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Nawigacja główna">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#repertuar">Repertuar</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt" class="btn btn--small">Rezerwacja</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="kicker">🎧 DJ na każdą okazję</span>
+        <h1 class="hero__title">Rozkręcę Twoją imprezę<br /><span class="highlight">do samego dna</span></h1>
+        <p class="hero__lead">
+          Pełen bak hitów, mocny bas i zero nudy. DJ Szambiarz zadba o to,
+          żeby parkiet był pełny od pierwszego do ostatniego kawałka — wesela,
+          urodziny, eventy firmowe i imprezy plenerowe.
+        </p>
+        <div class="hero__cta">
+          <a href="#kontakt" class="btn btn--primary">Zarezerwuj termin</a>
+          <a href="#repertuar" class="btn btn--ghost">Posłuchaj setów ▸</a>
+        </div>
+
+        <!-- equalizer -->
+        <div class="equalizer" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="vinyl">
+          <div class="vinyl__disc">
+            <div class="vinyl__label">DJ<br>SZAMBIARZ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>WESELA</span><span>★</span><span>URODZINY</span><span>★</span>
+        <span>IMPREZY FIRMOWE</span><span>★</span><span>OSIEMNASTKI</span><span>★</span>
+        <span>PLENERY</span><span>★</span><span>SYLWESTER</span><span>★</span>
+        <span>WESELA</span><span>★</span><span>URODZINY</span><span>★</span>
+        <span>IMPREZY FIRMOWE</span><span>★</span><span>OSIEMNASTKI</span><span>★</span>
+        <span>PLENERY</span><span>★</span><span>SYLWESTER</span><span>★</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== STATS ====== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat"><span class="stat__num" data-target="50">0</span><span class="stat__suffix">+</span><span class="stat__label">zagranych imprez</span></div>
+      <div class="stat"><span class="stat__num" data-target="18">0</span><span class="stat__label">miesięcy na scenie</span></div>
+      <div class="stat"><span class="stat__num" data-target="8000">0</span><span class="stat__label">utworów w bazie</span></div>
+      <div class="stat"><span class="stat__num" data-target="100">0</span><span class="stat__suffix">%</span><span class="stat__label">pełnych parkietów</span></div>
+    </div>
+  </section>
+
+  <!-- ====== O MNIE ====== -->
+  <section class="section" id="o-mnie">
+    <div class="container about">
+      <div class="about__media">
+        <div class="about__photo about__photo--logo">
+          <img src="assets/logo-square.png" alt="Logo DJ Szambiarz" />
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="kicker kicker--dark">O mnie</span>
+        <h2 class="section__title">Wożę bas tam,<br>gdzie trzeba 💪</h2>
+        <p>
+          Cześć, nazywam się <strong>Artur Tomaszewski</strong>, a na scenie
+          znają mnie jako DJ Szambiarz. Nazwa zobowiązuje — przyjeżdżam,
+          podłączam, opróżniam parkiet z nudy i napełniam go ludźmi. Gram na
+          imprezach od półtora roku i obsługuję eventy w całej Polsce, a wiem
+          już jedno: dobra zabawa to nie przypadek, tylko właściwy kawałek
+          w odpowiednim momencie.
+        </p>
+        <p>
+          Skąd ta nazwa? Na co dzień pracuję jako <strong>kierowca
+          szambiarki</strong> — i to właśnie stąd wziął się mój pseudonim. Po
+          godzinach zamieniam beczkowóz na konsoletę i robię to, co kocham
+          najbardziej: kręcę najlepszą imprezę w okolicy. Dwa fachy, jedna
+          zasada — robota porządnie zrobiona od początku do końca.
+        </p>
+        <p>
+          Profesjonalny sprzęt nagłośnieniowy, oświetlenie sceniczne, mikrofony
+          bezprzewodowe i konferansjerka. Dopasowuję repertuar do gości —
+          od klasyki disco polo, przez największe hity, po klubowe brzmienia.
+        </p>
+        <ul class="checklist">
+          <li>Własne, profesjonalne nagłośnienie i oświetlenie</li>
+          <li>Konferansjerka i prowadzenie imprezy</li>
+          <li>Indywidualny dobór repertuaru z parą / organizatorem</li>
+          <li>Działam mobilnie — dojeżdżam w całej Polsce</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OFERTA ====== -->
+  <section class="section section--alt" id="oferta">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker kicker--dark">Oferta</span>
+        <h2 class="section__title">Na czym gram</h2>
+        <p class="section__sub">Wybierz okazję — resztą zajmie się Szambiarz.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">💍</div>
+          <h3>Wesela</h3>
+          <p>Od pierwszego tańca po białe szaleństwo o 4 nad ranem. Płynne przejścia, brak ciszy, pełen parkiet.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎂</div>
+          <h3>Urodziny &amp; 18-stki</h3>
+          <p>Energia dopasowana do ekipy. Hity, które znają wszyscy i bangery dla najmłodszych gości.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🏢</div>
+          <h3>Imprezy firmowe</h3>
+          <p>Eleganckie tło muzyczne na bankiet albo ostre granie na integrację — Ty wybierasz klimat.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎉</div>
+          <h3>Plenery &amp; festyny</h3>
+          <p>Mocne nagłośnienie pod otwarte niebo. Dożynki, pikniki, imprezy miejskie i wiejskie.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎆</div>
+          <h3>Sylwester</h3>
+          <p>Powitanie Nowego Roku z hukiem. Odliczanie, toast i nieprzerwana zabawa do rana.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎤</div>
+          <h3>Karaoke &amp; konkursy</h3>
+          <p>Animacje, konkursy z nagrodami i karaoke dla odważnych. Goście wychodzą uśmiechnięci.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== REPERTUAR ====== -->
+  <section class="section" id="repertuar">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker kicker--dark">Repertuar</span>
+        <h2 class="section__title">Co leci z głośników</h2>
+        <p class="section__sub">Mieszam gatunki tak, żeby każdy znalazł coś dla siebie.</p>
+      </div>
+
+      <div class="genres">
+        <span class="tag">Disco Polo</span>
+        <span class="tag">Największe Polskie Hity</span>
+        <span class="tag">Dance / Club</span>
+        <span class="tag">Pop</span>
+        <span class="tag">Rock klasyczny</span>
+        <span class="tag">Lata 80' i 90'</span>
+        <span class="tag">Latino</span>
+        <span class="tag">House</span>
+        <span class="tag">Biesiadne</span>
+        <span class="tag">Hip-Hop</span>
+      </div>
+
+      <div class="player">
+        <h3 class="player__title">🎵 Przykładowy set: „Na fali" — Skorzęcin</h3>
+        <iframe
+          class="player__spotify"
+          src="https://open.spotify.com/embed/track/4aHyFAZo9plc1SPCc5SuT7?utm_source=generator&theme=0"
+          width="100%" height="152" frameborder="0"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          title="Spotify — Na fali, Skorzęcin">
+        </iframe>
+        <p class="player__note">Posłuchaj przykładowego klimatu — pełne sety dopasowuję do Twojej imprezy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OPINIE ====== -->
+  <section class="section section--alt" id="opinie">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker kicker--dark">Opinie</span>
+        <h2 class="section__title">Co mówią goście</h2>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>Parkiet pełny przez całą noc! Goście do dziś wspominają nasze wesele. Polecamy w 100%.</blockquote>
+          <figcaption>— Ania &amp; Marek, wesele</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>Profesjonalizm i luz w jednym. Nazwa żartobliwa, ale robota na najwyższym poziomie.</blockquote>
+          <figcaption>— Firma BudMax, impreza integracyjna</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>Na osiemnastce córki dał czadu! Wszystkie pokolenia bawiły się razem. Dziękujemy!</blockquote>
+          <figcaption>— Pani Grażyna, urodziny</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== KONTAKT / REZERWACJA ====== -->
+  <section class="section section--cta" id="kontakt">
+    <div class="container contact">
+      <div class="contact__info">
+        <span class="kicker">Rezerwacja</span>
+        <h2 class="section__title">Sprawdź wolny termin</h2>
+        <p>Napisz albo zadzwoń — odpowiem szybko i podam wycenę dopasowaną do Twojej imprezy.</p>
+        <ul class="contact__list">
+          <li><span>📞</span> <a href="tel:+48507046509">+48 507 046 509</a></li>
+          <li><span>✉️</span> <a href="mailto:djszambiarz@gmail.com">djszambiarz@gmail.com</a></li>
+          <li><span>📍</span> Gram w całej Polsce — dojeżdżam na miejsce</li>
+          <li><span>🕒</span> Odpowiadam zwykle w ciągu 24h</li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="bookingForm" novalidate>
+        <div class="field">
+          <label for="name">Imię i nazwisko *</label>
+          <input type="text" id="name" name="name" required placeholder="Jan Kowalski" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Telefon *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="500 600 700" />
+          </div>
+          <div class="field">
+            <label for="date">Data imprezy</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="type">Rodzaj imprezy</label>
+          <select id="type" name="type">
+            <option value="">— wybierz —</option>
+            <option>Wesele</option>
+            <option>Urodziny / 18-stka</option>
+            <option>Impreza firmowa</option>
+            <option>Plener / festyn</option>
+            <option>Sylwester</option>
+            <option>Inna</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="4" placeholder="Napisz kilka słów o imprezie — miejsce, liczba gości, oczekiwania..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Wyślij zapytanie 🎧</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png" alt="" class="brand__logo" width="44" height="44" />
+        <span class="brand__name">DJ <strong>Szambiarz</strong></span>
+      </a>
+      <p class="footer__tag">Rozkręcamy imprezy do dna w całej Polsce.</p>
+      <p class="footer__copy">© <span id="year"></span> DJ Szambiarz · Artur Tomaszewski. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Do góry">▲</a>
+
+  <!-- Dane strukturalne dla wyszukiwarek -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "DJ Szambiarz",
+    "alternateName": "Artur Tomaszewski",
+    "description": "DJ na wesela, urodziny, imprezy firmowe i eventy. Profesjonalne nagłośnienie, oświetlenie i konferansjerka.",
+    "image": "assets/logo.png",
+    "founder": { "@type": "Person", "name": "Artur Tomaszewski" },
+    "telephone": "+48507046509",
+    "email": "djszambiarz@gmail.com",
+    "areaServed": "PL",
+    "genre": ["Disco Polo", "Dance", "Pop", "House", "Hip-Hop"]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
