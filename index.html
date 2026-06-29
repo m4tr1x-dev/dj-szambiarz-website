@@ -315,6 +315,13 @@
 
   <a href="#top" class="to-top" id="toTop" aria-label="Do góry">▲</a>
 
+  <!-- Muzyka w tle (aktywuje się, gdy w assets/audio/ pojawi się plik utworu) -->
+  <audio id="bgMusic" loop preload="auto" src="assets/audio/na-fali-skorzecinska.mp3"></audio>
+  <button class="music-toggle" id="musicToggle" type="button" hidden aria-pressed="false" aria-label="Włącz lub wycisz muzykę w tle">
+    <span class="music-toggle__eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="music-toggle__txt">Muzyka</span>
+  </button>
+
   <!-- Dane strukturalne dla wyszukiwarek -->
   <script type="application/ld+json">
   {

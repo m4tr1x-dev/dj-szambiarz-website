@@ -27,6 +27,52 @@
     toTop.classList.toggle('show', window.scrollY > 600);
   }, { passive: true });
 
+  /* ---- Muzyka w tle (zapętlona) ---- */
+  const bgMusic = document.getElementById('bgMusic');
+  const musicToggle = document.getElementById('musicToggle');
+  if (bgMusic && musicToggle) {
+    const STORE = 'djsz_music';          // 'on' | 'off'
+    let ready = false;
+    let wantOn = true;                   // domyślnie próbujemy grać
+    try { if (localStorage.getItem(STORE) === 'off') wantOn = false; } catch (e) {}
+
+    bgMusic.volume = 0.55;
+
+    function remember(v) { try { localStorage.setItem(STORE, v); } catch (e) {} }
+    function setUI(on) {
+      musicToggle.classList.toggle('playing', on);
+      musicToggle.setAttribute('aria-pressed', String(on));
+    }
+    function tryPlay() {
+      const p = bgMusic.play();
+      if (p && p.catch) p.catch(function () {}); // autoplay zablokowany do interakcji
+    }
+
+    // Przycisk pojawia się dopiero, gdy utwór jest gotowy do odtworzenia.
+    bgMusic.addEventListener('canplay', function () {
+      if (ready) return;
+      ready = true;
+      musicToggle.hidden = false;
+      setUI(wantOn);
+      if (wantOn) tryPlay();
+    });
+    bgMusic.addEventListener('play',  function () { setUI(true); });
+    bgMusic.addEventListener('pause', function () { setUI(false); });
+
+    // Autoplay z dźwiękiem jest blokowany — startujemy przy pierwszej interakcji gościa.
+    function onFirstGesture() {
+      if (ready && wantOn && bgMusic.paused) tryPlay();
+    }
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+      window.addEventListener(ev, onFirstGesture, { once: true, passive: true });
+    });
+
+    musicToggle.addEventListener('click', function () {
+      if (bgMusic.paused) { wantOn = true;  remember('on');  tryPlay(); }
+      else                { wantOn = false; remember('off'); bgMusic.pause(); }
+    });
+  }
+
   /* ---- Liczniki w sekcji statystyk ---- */
   function animateCount(el) {
     const target = +el.dataset.target;
